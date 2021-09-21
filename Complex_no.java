@@ -42,16 +42,43 @@ public class Complex_no {
         int r2 =sc.nextInt();
         System.out.println("enter the  imag number of the second complen no : ");
         int i2 =sc.nextInt();
-        Complex comp1 = new Complex(r1,i1,r2,i2);
-
-        System.out.println("Enter 1 for ->addition ,2 for-> subtraction , 3 for-> multiplication");
-        int num = sc.nextInt();
-        switch (num)
-        {
-            case(1) -> comp1.add();
-            case(2) -> comp1.sub();
-            case(3) ->comp1.mult();
-            default -> System.out.println("Enter valid number") ;
+        Complex comp1 = new Complex(r1, i1, r2, i2);
+        while (true) {
+            System.out.println("Enter 1 for ->addition ,2 for-> subtraction , 3 for-> multiplication and 4 for -> exit");
+            int num = sc.nextInt();
+            switch (num) {
+                case (1) -> comp1.add();
+                case (2) -> comp1.sub();
+                case (3) -> comp1.mult();
+                case(4) -> System.exit(0);
+                default -> System.out.println("Enter valid number");
+            }
         }
     }
 }
+/*
+enter the  real number of the first complen no : 
+1
+enter the  imag number of the first complen no : 
+2
+enter the  real number of the second complen no : 
+3
+enter the  imag number of the second complen no : 
+4
+Enter 1 for ->addition ,2 for-> subtraction , 3 for-> multiplication and 4 for -> exit
+1
+The addition is :
+(4)+i(6)
+Enter 1 for ->addition ,2 for-> subtraction , 3 for-> multiplication and 4 for -> exit
+2
+The subtraction is :
+(-2)+i(-2)
+Enter 1 for ->addition ,2 for-> subtraction , 3 for-> multiplication and 4 for -> exit
+3
+the multiplication is :
+(-5)+i(10)
+Enter 1 for ->addition ,2 for-> subtraction , 3 for-> multiplication and 4 for -> exit
+4
+
+Process finished with exit code 0
+*/
